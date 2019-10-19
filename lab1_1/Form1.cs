@@ -20,5 +20,81 @@ namespace lab1_1
         {
 
         }
+
+        //вычесление
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form1 form = new Form1();
+
+            double a, b, c, P, Pp, S;
+
+           a = Convert.ToDouble(textBox1.Text);
+           b = Convert.ToDouble(textBox2.Text);
+           c = Convert.ToDouble(textBox3.Text);
+
+            //проверка условия 
+            if (a > 0 && b > 0 && c > 0) {
+                if (a + b > c && a + c > b && b + c > a) {
+
+                   //перимтр треугольника
+                   P = a + b + c;
+
+                   //полуперимтр треугольника
+                   Pp = P / 2;
+
+                   //формула нахождения площади
+                   S = Math.Sqrt(Pp * (Pp - a) * (Pp - b) * (Pp - c));
+
+                   //textBox4 вывод значения периметра треугольника
+                   textBox4.Text = Convert.ToString(P);
+
+                } else {
+
+                }
+
+            } else {
+
+            }
+            
+
+        }
+
+        //exit buttom
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //закрытие приложения
+            Close();
+        
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
