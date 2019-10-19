@@ -24,8 +24,8 @@ namespace lab1_1
         //вычесление
         private void button2_Click(object sender, EventArgs e)
         {
-            Form1 form = new Form1();
-
+            
+        
             double a, b, c, P, Pp, S;
 
            a = Convert.ToDouble(textBox1.Text);
@@ -47,13 +47,15 @@ namespace lab1_1
 
                    //textBox4 вывод значения периметра треугольника
                    textBox4.Text = Convert.ToString(P);
+                    //textBox4 вывод значения площади треугольника
+                    textBox5.Text = Convert.ToString(S);
 
                 } else {
-
+                    
                 }
 
             } else {
-
+                
             }
             
 
